@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Data</title>
+</head>
+<body>
+    <h1>JSON Data</h1>
+    <ul>
+        {% for item in json_data %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Web App</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>date</th>
+                <th>trade_code</th>
+                <th>high</th>
+                <th>low</th>
+                <th>open</th>
+                <th>close</th>
+                <th>volume</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stock %}
+                <tr>
+                    <td>{{ stock.date }}</td>
+                    <td>{{ stock.trade_code }}</td>
+                    <td>{{ stock.high }}</td>
+                    <td>{{ stock.low }}</td>
+                    <td>{{ stock.open }}</td>
+                    <td>{{ stock.close }}</td>
+                    <td>{{ stock.volume }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html> -->
+

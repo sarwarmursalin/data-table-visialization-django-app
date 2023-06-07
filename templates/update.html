@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Stock</title>
+</head>
+<body>
+    <form method="POST" action="{% url 'update' stock.id %}">
+        {% csrf_token %}
+        <label for="date">Stock:</label>
+        <input type="text" id="date" name="date" value="{{ stock.date }}"><br>
+
+        <label for="trade_code">Trade code:</label>
+        <input type="text" id="trade_code" name="trade_code" value="{{ stock.trade_code }}"><br>
+
+        <label for="high">High:</label>
+        <input type="text" id="high" name="high" value="{{ stock.high }}"><br>
+
+        <label for="low">Low:</label>
+        <input type="text" id="low" name="low" value="{{ stock.low }}"><br>
+
+        <label for="open">Open:</label>
+        <input type="text" id="open" name="open" value="{{ stock.open }}"><br>
+
+        <label for="close">Close:</label>
+        <input type="text" id="close" name="close" value="{{ stock.close }}"><br>
+
+        <label for="volume">Volume:</label>
+        <input type="text" id="volume" name="volume" value="{{ stock.volume }}"><br>
+
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
